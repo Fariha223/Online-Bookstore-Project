@@ -1,0 +1,148 @@
+/* navbar.css */
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fjalla+One&display=swap');
+
+.navbar {
+  box-sizing: border-box;
+  display: flex;
+  background: rgb(28, 25, 25);
+  text-align: center;
+  align-items: center;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  height: 80px;
+}
+
+
+nav a {
+  margin: 0 20px;
+  color: white;
+  text-decoration: none;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+nav {
+  display: flex;
+  align-items: baseline;
+  margin-inline-start: 40%;
+}
+
+nav a:hover {
+  -webkit-text-fill-color: rgb(96, 157, 183);
+}
+
+.nav-btn {
+  padding: 8px;
+  cursor: pointer;
+  background: rgb(169, 145, 74);
+  border: 10px;
+  border-radius: 30px;
+  color: black;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.logo {
+  width: 130px;
+  margin: 40px;
+  height: auto;
+}
+
+
+.nav-item {
+  margin-left: auto; 
+  text-decoration: none;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  color: rgb(236, 235, 225);
+  text-decoration: none;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: rgb(32, 181, 176);
+  text-decoration: none;
+}
+
+.ant-badge {
+  margin-left: 10px;
+  margin-top: -5px; 
+  font-size: 38px; /* Adjust font size */
+  color: white;
+}
+
+.auth-btn {
+  background-color: rgb(85, 74, 51);
+  color: white;
+  padding: 5px;
+  border-radius: 12px;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+  width: 20%; /* Ensure it fits within the dropdown menu */
+  text-align: center;
+}
+
+.auth-btn:hover {
+  background-color: white; /* Hover background color */
+  color: #56a4a9; /* Hover text color */
+}
+
+
+
+
+.user-icon-container {
+  width: 40px; /* Adjust size */
+  height: 40px; /* Adjust size */
+  border-radius: 50%; 
+  background-color: rgb(108, 108, 148); /* Background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-icon-container svg {
+  font-size: 24px; /* Adjust icon size */
+  color: rgb(251, 251, 251); /* Icon color */
+}
+
+/* @media only screen and (max-width: 900px) {
+  .nav-btn {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    gap: 1.5rem;
+    margin-inline-start: 0%;
+    align-items: center;
+    background-color: rgb(38, 35, 35);
+    transition: 1s;
+    transform: translateY(0);
+  }
+
+  .responsive_nav {
+    transform: none;
+  }
+} */
+
+

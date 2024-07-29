@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+*{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
+}
+.login-signup-form{
+    background-color:rgb(37, 29, 29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color:#0a383d;
+    position: relative;
+    width:350px;
+    height: 420px; 
+    padding: 50px 40px;
+    border-radius: 8px;
+    z-index:2;
+    inset: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.heading{
+ text-align: center;
+ color: rgba(220, 163, 9, 0.933);
+ margin-top: 20px;
+ font-size: 170%;
+}
+
+.input-container{
+    border-radius: 5px;
+    margin-top: 20px;
+    border:5px;
+
+}
+
+.input-icon{
+    height: fit-content;
+    align-items: center;
+}
+
+input{
+    margin-left: 10px;
+    background: fixed;
+    border-radius: 5px;
+    outline: #0a6f48;
+    font-size: 16px;
+    font-family: serif;
+    color: whitesmoke;
+}
+
+
+
+.message{ 
+    text-align: center;
+    color: #bd9423;
+}
+
+button{
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    margin: 15px auto;
+    border-radius: 10px;
+    width:80px;
+    height: 30px;
+
+}
+
+.auth-link{
+    color: rgb(222, 222, 222);
+    text-decoration: none;
+}
+
+.auth-link:hover{
+    color:rgb(86, 141, 107)
+}
+
+.Button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0a6f48;
+  -webkit-text-fill-color: rgb(251, 251, 251);
+  font-family: serif;
+  font-size: 16px;
+  transition: background-color .4s ease-in-out;
+}
+
+.Button:hover{
+    background-color: #30966d;
+    color: white;
+    border-color: white;
+}
+
+.logout-btn {
+    background-color: rgb(85, 74, 51);
+    color: white;
+    padding: 6px;
+    border-radius: 15px;
+    font-family: "Fjalla One", sans-serif;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+    width: calc(100% - 12px); /* Ensure it fits within the dropdown menu */
+    text-align: center;
+}
+
+.logout-btn:hover {
+    background-color: white; /* Hover background color */
+    color: #5da3a8; /* Hover text color */
+}
+
+
+.protected-auth{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    background-color: transparent;
+    color: #fff;
+
+}
+
+.protect-signup{
+    text-decoration: none;
+    background: -webkit-linear-gradient(45deg, rgb(28, 85, 131), rgb(226, 90, 120));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.animated {
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

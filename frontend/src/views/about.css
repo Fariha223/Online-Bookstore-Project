@@ -1,0 +1,55 @@
+.back-img {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+}
+
+.content-container {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 50%; 
+    padding: 0 20px; 
+}
+
+.text-container {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.story {
+    font-family: "Albert Sans", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: rgb(136, 87, 72);
+    text-align: center;
+    padding: 20px 0; 
+    font-size: 2.5rem; 
+}
+
+.par {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: aliceblue;
+    text-align: left; 
+    margin-top: 20px; 
+}
+
+.dashboard-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dashboard-link:hover {
+    background-color: #45a049;
+}

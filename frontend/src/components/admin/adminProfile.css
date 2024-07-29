@@ -1,0 +1,99 @@
+.admin-container {
+  display: flex;
+}
+
+.admin_dash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background-color: #f7f9fc; 
+  padding: 20px;
+}
+
+.admin_dash-list {
+  translate: 650px ;
+  background: #1f2937;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 800px;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffffff; 
+}
+
+h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #d1d5db; 
+}
+
+.admin-account-options h4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.admin-account-options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.admin-account-options input {
+  width: calc(100% - 150px);
+  padding: 10px;
+  border: 1px solid #cbd5e1; 
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #f1f5f9; 
+  color: #1f2937; 
+}
+
+.admin-account-options input:focus {
+  outline: none;
+  border-color: #2563eb;
+  background-color: #e0f2fe;
+}
+
+.admin-account {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.admin-account .btn {
+  padding: 8px 20px;
+  margin: 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.admin-account .btn-primary {
+  background-color: #2563eb; /* Blue color */
+  color: white;
+}
+
+.admin-account .btn-primary:hover {
+  background-color: #1d4ed8;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-account .btn-warning {
+  background-color: #fbbf24; 
+  color: white;
+}
+
+.admin-account .btn-warning:hover {
+  background-color: #f59e0b; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
