@@ -1,14 +1,1 @@
-// // Token based protected routes
-// exports.requireLogIn = async (req, res, next) => {
-//   try {
-//     const decode = verify(
-//       req.headers.authorization,
-//       createSecretToken()
-//     );
-//     req.user = decode;
-//     next();
-//   } catch (error) {
-//     console.log(error);
-//     res.status(401).json({ message: "Unauthorized" });
-//   }
-// };
+/..
