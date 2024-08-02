@@ -57,25 +57,17 @@
   font-weight: bold;
 }
 
-.category-btn-container {
-  display: inline-block;
-  background-color: #bb3174;
-  border-radius: 18px;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
 .category-btn {
-  color: #f5f9f8;
+  color: #dfe4e3;
   text-decoration: none;
+  padding: 3px;
   font-weight: bold;
+  background-color: #d24187;
 }
 
-.category-btn-container:hover {
-  background-color: #b3477f;
+.category-btn:hover {
+  background-color: #c60e6d;
 }
-
 
 
 /* Book Page */
@@ -266,6 +258,6 @@
 }
 
 .search-form button {
-  margin-left: 10px; /* Space between input and button */
+  margin-left: 10px;
 }
 
