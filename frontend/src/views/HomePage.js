@@ -1,21 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { Link, useNavigate } from "react-router-dom";
 import "./home&book-page.css";
 import { useAuth } from "../context/AuthContext";
-import SignUp from "../auth/Signup";
 import Layout from "../components/Layout";
 
 export default function HomePage() {
   const [auth] = useAuth();
-  const [appearSignup, setAppearSignup] = useState(false);
   const navigate = useNavigate();
 
-  const handleOnClick = (feature) => {
+  const handleOnClick = (e) => {
+    e.preventDefault(); 
     if (!auth.user) {
-      setAppearSignup(true);
+      navigate(`/signup`);
     } else {
-      navigate(`/${feature}`);
+      navigate(`/dashboard/bookpage`);
     }
   };
 
@@ -48,12 +47,11 @@ export default function HomePage() {
           </p>
           <h3 className="highlight">Find all the latest Islamic books from our Bookshop!</h3>
           <div className="category-btn-container">
-            <Link to="/bookpage" className="category-btn" onClick={handleOnClick}>
+            <button className="category-btn" onClick={handleOnClick}>
               Find Books
-            </Link>
+            </button>
           </div>
         </div>
-        {appearSignup && <SignUp />}
       </div>
     </Layout>
   );
