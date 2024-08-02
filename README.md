@@ -9,8 +9,8 @@
 - **Testing**: Postman tool was used for testing
 
 ## **Start The Project**
--1. cd backend
--2. npm start
+1. **cd backend**
+2. **npm start -> backend and frontend are linked**
 
 ## **Overview**
 
